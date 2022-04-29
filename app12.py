@@ -28,6 +28,8 @@ app = Flask(__name__,template_folder='template')
 # Model saved with Keras model.save()
 MODEL_PATH ='model_resnet50.h5'                      ## Model Name 
 
+classes = ['Pneumonia', 'Normal']
+
 # Load your trained model
 model = load_model(MODEL_PATH)
 
