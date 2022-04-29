@@ -32,6 +32,9 @@ classes = ['Pneumonia', 'Normal']
 
 # Load your trained model
 model = load_model(MODEL_PATH)
+model._make_predict_function()          # Necessary
+print('Model loaded. Check http://127.0.0.1:5000/')
+
 
 
 def model_predict(img_path, model):
